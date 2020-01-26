@@ -1,0 +1,180 @@
+Last login: Sat Jan 25 17:52:40 on ttys004
+BASE-P0127-MBP:~ atsukikakehi$ cd samples/
+BASE-P0127-MBP:samples atsukikakehi$ ls
+AndroidUnitTesting
+Architecture-Patterns-Samples
+AwesomeProject
+AwesomeReactNativeApp
+DaggerScopeExample
+DisplayingSearchableContentByUsingASearchController
+ExpoSampleApp
+ExpoTypescriptApp
+FoodTracker
+ImageViewSample
+OperationQueueSample
+SegueCatalogCustomizingandUnwindingwithViewControllerContainment
+TypeScript-React-Native-Starter
+UIKitCatalogCreatingAndCustomizingViewsAndControls
+UITableViewFundamentalsforiOS
+android-architecture
+dagger2-sample
+daggersamplesyakyo
+expo-and-typescript
+hygen-sample
+kotlin-exercise
+react-redux-sample
+redux
+scabbard
+tbf5-samples
+BASE-P0127-MBP:samples atsukikakehi$ mkdir ios
+BASE-P0127-MBP:samples atsukikakehi$ cd ios/
+BASE-P0127-MBP:ios atsukikakehi$ ls
+BASE-P0127-MBP:ios atsukikakehi$ git clone https://github.com/kishikawakatsumi/KeychainAccess.git
+Cloning into 'KeychainAccess'...
+remote: Enumerating objects: 50, done.
+remote: Counting objects: 100% (50/50), done.
+remote: Compressing objects: 100% (40/40), done.
+remote: Total 2362 (delta 20), reused 22 (delta 10), pack-reused 2312
+Receiving objects: 100% (2362/2362), 1.43 MiB | 1.16 MiB/s, done.
+Resolving deltas: 100% (1510/1510), done.
+BASE-P0127-MBP:ios atsukikakehi$ ls
+KeychainAccess
+BASE-P0127-MBP:ios atsukikakehi$ cd KeychainAccess/
+BASE-P0127-MBP:KeychainAccess atsukikakehi$ ls
+Examples			Package.swift
+KeychainAccess.podspec		README.md
+KeychainAccess.xcworkspace	Screenshots
+LICENSE				Sources
+Lib
+BASE-P0127-MBP:KeychainAccess atsukikakehi$ ls
+Examples			Package.swift
+KeychainAccess.podspec		README.md
+KeychainAccess.xcworkspace	Screenshots
+LICENSE				Sources
+Lib
+BASE-P0127-MBP:KeychainAccess atsukikakehi$ git branch
+* master
+BASE-P0127-MBP:KeychainAccess atsukikakehi$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    Lib/KeychainAccess.xcodeproj/project.pbxproj
+	deleted:    Lib/KeychainAccess.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+	deleted:    Lib/KeychainAccess.xcodeproj/xcshareddata/xcschemes/KeychainAccess.xcscheme
+	deleted:    Lib/KeychainAccess.xcodeproj/xcshareddata/xcschemes/TestHost.xcscheme
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Lib/KeychainAccessTests/EnumTests.swift
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Examples/Example-iOS/Example-iOS.xcodeproj/project.xcworkspace/
+
+BASE-P0127-MBP:KeychainAccess atsukikakehi$ git checkout .
+Updated 1 path from the index
+BASE-P0127-MBP:KeychainAccess atsukikakehi$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    Lib/KeychainAccess.xcodeproj/project.pbxproj
+	deleted:    Lib/KeychainAccess.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+	deleted:    Lib/KeychainAccess.xcodeproj/xcshareddata/xcschemes/KeychainAccess.xcscheme
+	deleted:    Lib/KeychainAccess.xcodeproj/xcshareddata/xcschemes/TestHost.xcscheme
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Examples/Example-iOS/Example-iOS.xcodeproj/project.xcworkspace/
+
+BASE-P0127-MBP:KeychainAccess atsukikakehi$ git reset
+Unstaged changes after reset:
+D	Lib/KeychainAccess.xcodeproj/project.pbxproj
+D	Lib/KeychainAccess.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+D	Lib/KeychainAccess.xcodeproj/xcshareddata/xcschemes/KeychainAccess.xcscheme
+D	Lib/KeychainAccess.xcodeproj/xcshareddata/xcschemes/TestHost.xcscheme
+BASE-P0127-MBP:KeychainAccess atsukikakehi$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    Lib/KeychainAccess.xcodeproj/project.pbxproj
+	deleted:    Lib/KeychainAccess.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+	deleted:    Lib/KeychainAccess.xcodeproj/xcshareddata/xcschemes/KeychainAccess.xcscheme
+	deleted:    Lib/KeychainAccess.xcodeproj/xcshareddata/xcschemes/TestHost.xcscheme
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Examples/Example-iOS/Example-iOS.xcodeproj/project.xcworkspace/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+BASE-P0127-MBP:KeychainAccess atsukikakehi$ git reset --HEAD
+error: unknown option `HEAD'
+usage: git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]
+   or: git reset [-q] [<tree-ish>] [--] <paths>...
+   or: git reset --patch [<tree-ish>] [--] [<paths>...]
+
+    -q, --quiet           be quiet, only report errors
+    --mixed               reset HEAD and index
+    --soft                reset only HEAD
+    --hard                reset HEAD, index and working tree
+    --merge               reset HEAD, index and working tree
+    --keep                reset HEAD but keep local changes
+    --recurse-submodules[=<reset>]
+                          control recursive updating of submodules
+    -p, --patch           select hunks interactively
+    -N, --intent-to-add   record only the fact that removed paths will be added later
+
+BASE-P0127-MBP:KeychainAccess atsukikakehi$ git reset --hard
+HEAD is now at c801c3f Update README.md
+BASE-P0127-MBP:KeychainAccess atsukikakehi$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Examples/Example-iOS/Example-iOS.xcodeproj/project.xcworkspace/
+
+nothing added to commit but untracked files present (use "git add" to track)
+BASE-P0127-MBP:KeychainAccess atsukikakehi$
+BASE-P0127-MBP:KeychainAccess atsukikakehi$
+BASE-P0127-MBP:KeychainAccess atsukikakehi$
+BASE-P0127-MBP:KeychainAccess atsukikakehi$ ls
+Examples			Package.swift
+KeychainAccess.podspec		README.md
+# OS X
+.DS_Store
+
+# Xcode
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+profile
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+
