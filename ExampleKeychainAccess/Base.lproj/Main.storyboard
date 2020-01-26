@@ -63,6 +63,9 @@
                                                     <rect key="frame" x="15" y="9" width="391" height="26.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="editingChanged:" destination="khp-HS-gcJ" eventType="editingChanged" id="obD-dO-In5"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -84,6 +87,9 @@
                                                     <rect key="frame" x="15" y="9" width="391" height="26.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="editingChanged:" destination="khp-HS-gcJ" eventType="editingDidEnd" id="AIc-qb-R4S"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -109,6 +115,9 @@
                                                     <rect key="frame" x="15" y="9" width="391" height="26.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="editingChanged:" destination="khp-HS-gcJ" eventType="editingDidEnd" id="YgF-RY-wSl"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -133,10 +142,18 @@
                                 <action selector="cancel:" destination="khp-HS-gcJ" id="Vhg-yM-kM1"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="R4c-pI-Hon"/>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="save" id="R4c-pI-Hon">
+                            <connections>
+                                <action selector="saveAction:" destination="khp-HS-gcJ" id="QI2-nC-Bwc"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="cancelButton" destination="T1f-84-x8G" id="YBK-EJ-Sks"/>
+                        <outlet property="passwordField" destination="38L-oD-ZXw" id="hDQ-dO-nws"/>
+                        <outlet property="saveButton" destination="R4c-pI-Hon" id="RyU-33-ect"/>
+                        <outlet property="serviceField" destination="YTF-v9-gt8" id="wo1-GT-hZO"/>
+                        <outlet property="usernameField" destination="ICO-7G-Lcf" id="WW1-at-z2M"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="osm-aO-7rn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
