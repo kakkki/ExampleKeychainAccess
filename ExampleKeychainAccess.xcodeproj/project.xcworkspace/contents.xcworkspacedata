@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../../../samples/ios/KeychainAccess/Lib/KeychainAccess.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:KeychainAccessTests">
+   </FileRef>
+   <FileRef
+      location = "group:TestHost">
+   </FileRef>
+   <FileRef
       location = "self:ExampleKeychainAccess.xcodeproj">
    </FileRef>
 </Workspace>
