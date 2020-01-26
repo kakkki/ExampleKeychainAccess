@@ -4,10 +4,6 @@
 target 'ExampleKeychainAccess' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
-  # Pods for ExampleKeychainAccess
-  pod 'GoogleTagManager', '~> 6.0'
-
   pod 'KeychainAccess'
   
   target 'ExampleKeychainAccessTests' do
