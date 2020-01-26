@@ -178,3 +178,5 @@ DerivedData
 *.ipa
 *.xcuserstate
 
+# Pods folder 
+Pods
