@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		80BE4FDB23DD49C20074CFEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80BE4FDA23DD49C20074CFEE /* Assets.xcassets */; };
 		80BE4FDE23DD49C20074CFEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BE4FDC23DD49C20074CFEE /* LaunchScreen.storyboard */; };
 		80BE4FE923DD49C20074CFEE /* ExampleKeychainAccessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BE4FE823DD49C20074CFEE /* ExampleKeychainAccessTests.swift */; };
+		80BE502923DD68C00074CFEE /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BE502823DD68C00074CFEE /* AccountsViewController.swift */; };
 		B853A97EBC266D5473FF2939 /* Pods_ExampleKeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4313F0696E5DF9C3533611 /* Pods_ExampleKeychainAccess.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		80BE4FE423DD49C20074CFEE /* ExampleKeychainAccessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleKeychainAccessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80BE4FE823DD49C20074CFEE /* ExampleKeychainAccessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleKeychainAccessTests.swift; sourceTree = "<group>"; };
 		80BE4FEA23DD49C20074CFEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80BE502823DD68C00074CFEE /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
 		9E3EB42EC26CC873A3C2FEDD /* Pods-ExampleKeychainAccess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleKeychainAccess.release.xcconfig"; path = "Target Support Files/Pods-ExampleKeychainAccess/Pods-ExampleKeychainAccess.release.xcconfig"; sourceTree = "<group>"; };
 		C127C809CCFA2B5FCAF6AAAC /* Pods-ExampleKeychainAccessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleKeychainAccessTests.debug.xcconfig"; path = "Target Support Files/Pods-ExampleKeychainAccessTests/Pods-ExampleKeychainAccessTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,7 +78,6 @@
 				C127C809CCFA2B5FCAF6AAAC /* Pods-ExampleKeychainAccessTests.debug.xcconfig */,
 				07D2EAC47A010614988E8C0B /* Pods-ExampleKeychainAccessTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -110,6 +111,7 @@
 				80BE4FDA23DD49C20074CFEE /* Assets.xcassets */,
 				80BE4FDC23DD49C20074CFEE /* LaunchScreen.storyboard */,
 				80BE4FDF23DD49C20074CFEE /* Info.plist */,
+				80BE502823DD68C00074CFEE /* AccountsViewController.swift */,
 			);
 			path = ExampleKeychainAccess;
 			sourceTree = "<group>";
@@ -302,6 +304,7 @@
 			files = (
 				80BE4FD623DD49BE0074CFEE /* ViewController.swift in Sources */,
 				80BE4FD223DD49BE0074CFEE /* AppDelegate.swift in Sources */,
+				80BE502923DD68C00074CFEE /* AccountsViewController.swift in Sources */,
 				80BE4FD423DD49BE0074CFEE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
