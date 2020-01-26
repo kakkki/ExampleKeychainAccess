@@ -8,6 +8,8 @@ target 'ExampleKeychainAccess' do
   # Pods for ExampleKeychainAccess
   pod 'GoogleTagManager', '~> 6.0'
 
+  pod 'KeychainAccess'
+  
   target 'ExampleKeychainAccessTests' do
     inherit! :search_paths
     # Pods for testing
