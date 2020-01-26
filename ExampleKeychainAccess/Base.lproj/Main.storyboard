@@ -41,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="501" y="121"/>
         </scene>
-        <!--KyechainSave-->
+        <!--KeychainDataInputController-->
         <scene sceneID="jRS-UK-hzt">
             <objects>
-                <tableViewController id="khp-HS-gcJ" customClass="InputViewController" customModule="ExampleKeychainAccess" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="khp-HS-gcJ" userLabel="KeychainDataInputController" customClass="KeychainDataInputController" customModule="ExampleKeychainAccess" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hcY-Yl-oRI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,9 +128,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="KyechainSave" id="lz2-ni-LOV">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="T1f-84-x8G"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="T1f-84-x8G">
+                            <connections>
+                                <action selector="cancel:" destination="khp-HS-gcJ" id="Vhg-yM-kM1"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="R4c-pI-Hon"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="cancelButton" destination="T1f-84-x8G" id="YBK-EJ-Sks"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="osm-aO-7rn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
